@@ -18,9 +18,20 @@ export interface Country {
     suffixes: string[];
   };
   callingCode: string[];
+  currencies: {
+    [key: string]: {
+      name: string;
+      symbol: string;
+    };
+  };
 }
 
 export interface CallingCode {
   name: string;
   callingCodes: string[];
+}
+
+export interface Currency {
+  name: string;
+  symbol: string;
 }
